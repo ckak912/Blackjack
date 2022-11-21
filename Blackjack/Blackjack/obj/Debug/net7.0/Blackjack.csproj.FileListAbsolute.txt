@@ -1,0 +1,15 @@
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/bin/Debug/net7.0/Blackjack
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/bin/Debug/net7.0/Blackjack.deps.json
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/bin/Debug/net7.0/Blackjack.runtimeconfig.json
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/bin/Debug/net7.0/Blackjack.dll
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/bin/Debug/net7.0/Blackjack.pdb
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/obj/Debug/net7.0/Blackjack.csproj.AssemblyReference.cache
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/obj/Debug/net7.0/Blackjack.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/obj/Debug/net7.0/Blackjack.AssemblyInfoInputs.cache
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/obj/Debug/net7.0/Blackjack.AssemblyInfo.cs
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/obj/Debug/net7.0/Blackjack.csproj.CoreCompileInputs.cache
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/obj/Debug/net7.0/Blackjack.dll
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/obj/Debug/net7.0/refint/Blackjack.dll
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/obj/Debug/net7.0/Blackjack.pdb
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/obj/Debug/net7.0/Blackjack.genruntimeconfig.cache
+/Users/Charlie.KakeWhite/Documents/GitHub/charlie-blackjack/Blackjack/Blackjack/obj/Debug/net7.0/ref/Blackjack.dll
