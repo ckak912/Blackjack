@@ -1,6 +1,6 @@
 namespace Blackjack;
 
-public class Eshay
+public class Cards
 {
     
 }
