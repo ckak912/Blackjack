@@ -1,6 +1,6 @@
 namespace Blackjack.Services;
 
-public class PlayerValidation
+public class ScoreCalcs
 {
     
 }
