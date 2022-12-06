@@ -1,4 +1,4 @@
-namespace Blackjack.Services;
+namespace Blackjack.GameServices;
 
 public static class CheckIfWon
 {

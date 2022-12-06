@@ -1,6 +1,8 @@
 namespace Blackjack.Interfaces;
 
-public class IHand
+public interface IHand
 {
-    
+    public void Shuffle();
+    public List<Cards> DealHand();
+    public Cards DealOneCard();
 }

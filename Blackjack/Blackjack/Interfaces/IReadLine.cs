@@ -1,6 +1,6 @@
 namespace Blackjack.Interfaces;
 
-public class IReadLine
+public interface IReadLine
 {
-    
+    public string? ReadLine();
 }

@@ -1,6 +1,6 @@
 namespace Blackjack.Interfaces;
 
-public class IUserInput
+public interface IUserInput  
 {
-    
+    public string? GetPlayerMove();
 }
