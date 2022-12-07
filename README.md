@@ -13,7 +13,7 @@ ___
 ### Clone the repo
 You can clone this repo from your CLI by using the following commands:
 ```
-$ gh repo clone myob/fma/charlie-backjack
+$ gh repo clone myob-fma/charlie-backjack
 $ cd <location of chosen folder>
 $ dotnet restore
 ```
