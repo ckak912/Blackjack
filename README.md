@@ -7,8 +7,10 @@ The objective of this kata is to build a text-based Blackjack engine that allows
 ___
 ### System Requirements 
 A command line interface (CLI), either command prompt for windows or terminal for macOs.
-.Net SDK 7.0 - if you have homebrew you can install the latest version of .NET SDK by running the command brew cask install dotnet-sdk in your CLI
-
+.Net SDK 7.0 - if you have homebrew you can install the latest version of .NET SDK by running the command:
+```
+brew cask install dotnet-sdk 
+```
 ___
 ### Clone the repo
 You can clone this repo from your CLI by using the following commands:
