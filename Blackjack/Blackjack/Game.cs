@@ -45,7 +45,7 @@ public class Game
 
     private void PlayerPlayMove()
     {
-        while (!_player.IsBust && IsNotGameOverForDealer())
+        while (!_player.IsBust && !IsGameOverForDealer())
         {
             var playerMove = _playerInput.GetPlayerMove();
             if (Player.ChooseToStay(playerMove))
@@ -53,13 +53,13 @@ public class Game
             DrawAndPrintNewCardDrawn(_player);
             _consoleOutput.PrintTotalPointsAndHand(_player);
             GetPointsAndCheckIfBust(_player);
-            WaitTwoSeconds();
+            //WaitTwoSeconds();
         }
     }
 
     private void DealerPlayMove()
     {
-        if (!_player.IsBust && !IsNotGameOverForDealer())
+        if (!_player.IsBust && !IsGameOverForDealer())
             do
             {
                 DrawAndPrintNewCardDrawn(_dealer);
@@ -68,7 +68,7 @@ public class Game
                 WaitTwoSeconds();
                 if (_dealer.Points >= Rules.DealerStandOn) continue;
                 WaitTwoSeconds();
-            } while (IsNotGameOverForDealer());
+            } while (!IsGameOverForDealer());
     }
 
     private void CheckGameOutcome()
@@ -89,8 +89,7 @@ public class Game
 
     private static void GetPointsAndCheckIfBust(Player player)
     {
-        player.Points = ScoreCalcs.ComputeTotalPoints(player);
-        player.IsBust = Rules.IsBust(player);
+        
     }
 
     private void DrawAndPrintNewCardDrawn(Player player)
@@ -102,12 +101,12 @@ public class Game
 
     private static void WaitTwoSeconds()
     {
-        Thread.Sleep(2000);
+        //Thread.Sleep(2000);
     }
 
-    private bool IsNotGameOverForDealer()
+    private bool IsGameOverForDealer()
     {
-        return !_dealer.IsBust && _dealer.Points < Rules.DealerStandOn;
+        return _dealer.IsBust || _dealer.Points >= Rules.DealerStandOn;
     }
     
 }

@@ -6,7 +6,6 @@ using Xunit;
 
 namespace Blackjack.Test;
 //end to end testing of game
-//TODO: Implement IO testing interfaces so that I can instantiate input/output classes 
 public class GameTests
 {
     private readonly Player _player = new("You");

@@ -14,7 +14,7 @@ public class ScoreCalcsTests
         };
         const int expected = 10;
 
-        var actual = ScoreCalcs.ComputeTotalPoints(player);
+        var actual = player.Points;
         
         Assert.Equal(expected, actual);
     }
@@ -28,7 +28,7 @@ public class ScoreCalcsTests
         };
         const int expected = 18;
 
-        var actual = ScoreCalcs.ComputeTotalPoints(player);
+        var actual = player.Points;
         
         Assert.Equal(expected, actual);
     }

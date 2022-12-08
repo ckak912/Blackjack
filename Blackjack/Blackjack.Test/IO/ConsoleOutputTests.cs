@@ -29,13 +29,13 @@ public class ConsoleOutputTests
         var player = new Player("You")
         {
             Hand = new List<Cards> { new(Suit.Diamond, Number.Eight), new(Suit.Spade, Number.Queen) },
-            Points = 18
+            
         };
         const string expected = "\nYou are currently at 18" + 
                                 "\nwith the hand [[8, 'Diamond'] , ['Queen', 'Spade']]\n";
         var stringWriter = new StringWriter();
         Console.SetOut(stringWriter);
-        
+              
         consoleOutput.PrintTotalPointsAndHand(player);
 
         Assert.Contains(expected, stringWriter.ToString());

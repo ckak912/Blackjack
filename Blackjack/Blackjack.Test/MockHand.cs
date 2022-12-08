@@ -5,16 +5,13 @@ namespace Blackjack.Test;
 
 public class MockHand : IHand
 {
-    public List<Cards> Cards { get; set; }
-    private const int IndexOfFirstCard = 0;
-    private const int IndexOfSecondCard = 1;
-    private const int TwoCards = 2;
-    private const int OneCard = 1;
-
+    private Queue<Cards> Cards { get; set; }
+    private List<Cards> InitialCards;
     
     public MockHand(List<Cards> cards)
     {
-        Cards = cards;
+        InitialCards = cards;
+        Cards = new Queue<Cards>(cards);
     }
 
     public void Shuffle()
@@ -22,29 +19,22 @@ public class MockHand : IHand
         if (Cards.Count >= 13)
         {
             var random = new Random();
-            Cards = Cards.OrderBy(x => random.Next()).ToList();
+            var newCards = InitialCards.OrderBy(x => random.Next()).ToList();
+            Cards = new Queue<Cards>(newCards);
         }
     }
 
     public List<Cards> DealHand()
     {
-        var hand = new List<Cards>
+        return new List<Cards>
         {
-            Cards[IndexOfFirstCard],
-            Cards[IndexOfSecondCard]
+            Cards.Dequeue(),
+            Cards.Dequeue()
         };
-        RemoveFromDeck(TwoCards);
-        return hand;
     }
 
     public Cards DealOneCard()
     {
-        var card = Cards[IndexOfFirstCard];
-        RemoveFromDeck(OneCard);
-        return card;
+        return Cards.Dequeue();
     }
-
-    private void RemoveFromDeck(int numberOfCards)
-    {
-        Cards.RemoveRange(IndexOfFirstCard, numberOfCards);
-    }}
+}

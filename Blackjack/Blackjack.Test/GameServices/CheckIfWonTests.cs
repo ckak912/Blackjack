@@ -19,17 +19,16 @@ public class CheckIfWonTests
         Assert.Equal(player, actual);
     }
 
-    [Theory]
-    [InlineData(20, 17)]
-    [InlineData(17, 25)]
-    public void DecideWinner_WhenDealerPointsIsMoreThanPlayerPoints_ReturnsDealerWins(int dealerPoints, int playerPoints)
+    [Fact]
+    public void DecideWinner_WhenDealerPointsIsMoreThanPlayerPoints_ReturnsDealerWins()
     {
-        var dealer = new Player("Dealer") { Points = dealerPoints };
-        var player = new Player("You") { Points = playerPoints };
+        var dealer = new Player("Dealer") { Points = 18 };
+        var player = new Player("You") { Points = 20};
+        
 
         var actual = CheckIfWon.DecideWinner(dealer, player);
         
-        Assert.Equal(dealer, actual);
+        Assert.Equal(player, actual);
     }
 
     [Fact]
@@ -47,7 +46,7 @@ public class CheckIfWonTests
     [Fact]
     public void CheckIfDraw_WhenPlayerAndDealerHasDifferentPoints_ReturnFalse()
     {
-        var dealer = new Player("Dealer") { Points = 18 };
+        var dealer = new Player("Dealer") { Hand = new List<Cards> {new(Suit.Club, Number.Ten), new(Suit.Club, Number.Eight)} };
         var player = new Player("You") { Points = 20 };
         const bool expected = false;
 

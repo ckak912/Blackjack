@@ -29,16 +29,6 @@ public class DrawGameTestData : IEnumerable<object[]>
             },
             MockGameTwoPlayerChooseToStay
         };
-        yield return new object[]
-        {
-            new List<Cards>
-            {
-                new(Suit.Club, Number.King), new(Suit.Diamond, Number.Eight),
-                new(Suit.Spade, Number.Ace), new(Suit.Heart, Number.King),
-                new(Suit.Diamond, Number.Ace), new(Suit.Diamond, Number.Two)
-            },
-            MockGameThreePlayerChooseToHitTwiceThenStay
-        };
     }
 
     IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();

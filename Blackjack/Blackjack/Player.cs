@@ -1,12 +1,20 @@
+using Blackjack.GameServices;
+
 namespace Blackjack;
 
 public class Player
 {
     public string Name {get;}
-    public string Verb { get; }
+    public string Verb { get;}
     public List<Cards> Hand { get; set; }
-    public int Points { get; set; }
-    public bool IsBust { get; set; }
+
+    public int Points
+    {
+        get => ScoreCalcs.ComputeTotalPoints(Hand);
+        set => ScoreCalcs.ComputeTotalPoints(Hand);
+    }
+
+    public bool IsBust => Points >= Rules.BlackJack;
 
     public Player(string name)
     {
